@@ -48,6 +48,7 @@
                                 <connections>
                                     <outlet property="imageAluno" destination="I1a-iL-YQH" id="dM3-yt-b69"/>
                                     <outlet property="labelNomeDoAluno" destination="oKL-i4-VS5" id="GFr-bb-rep"/>
+                                    <segue destination="ZY7-NM-Hup" kind="show" identifier="editar" id="44x-cw-dNc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -217,6 +218,9 @@
                                                 <state key="normal" title="salvar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="buttonSalvar:" destination="ZY7-NM-Hup" eventType="touchUpInside" id="tBI-Yz-WqS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -274,4 +278,7 @@
             <point key="canvasLocation" x="-519" y="116"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="44x-cw-dNc"/>
+    </inferredMetricsTieBreakers>
 </document>
